@@ -68,9 +68,12 @@ let onVerificationWordC = "Gomosos";
 let onVerificationWordD = "Somos";
 
 function palindromeVerifier(word) {
-   // :)
+   return word.split("").reverse().join("") == word;
 }
-
+console.log(palindromeVerifier("reconocer"));
+console.log(palindromeVerifier("querer"));
+console.log(palindromeVerifier("Gomosos"));
+console.log(palindromeVerifier("Somos"));
 
 /*Dado un objeto que contiene una lista de palabras contar el
 número de letras vocales y consonantes y retornarlo en un arreglo de 2 posiciones.*/
