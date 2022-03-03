@@ -34,7 +34,12 @@ let testWordsList = [
 
 // pruebe para cada palabra A, B y C
 function wordSearcherIgnoreCase(targetWord, wordsList) {
-   // :)
+    wordsList.includes(targetWord)
+    ['a', 'b', 'c'].includes('a')
+    ['a', 'b', 'c'].includes('b')
+    ['a', 'b', 'c'].includes('c')
+    return true
+    
 }
 
 
