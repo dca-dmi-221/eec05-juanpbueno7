@@ -13,7 +13,7 @@ function wordCutter(words) {
    return result.split(``);
    
 }
-console.log(wordCutter(20));
+console.log(wordCutter(22));
 
 /*Dado un string buscar en un listado e indicar si se encuentra o no
 ahí contenido, debe soportar mayúsculas y minúsculas sin importar
