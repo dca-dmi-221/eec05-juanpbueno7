@@ -38,7 +38,6 @@ function wordSearcherIgnoreCase(targetWord, wordsList) {
     let a = ['a', 'b', 'c'].includes('a')
     let b = ['a', 'b', 'c'].includes('b')
     let c =['a', 'b', 'c'].includes('c')
-    return true
     
 }
 
@@ -131,8 +130,24 @@ let testWordToExplore = "amar";
 let wordsToVerify = ["amar", "arma", "rana" , "mara", "rama", "roma", "amor", "ramon", "omar"];
 
 function anagramVerifier(wordToExplore, listOfWords) {
-   // :)
-}
+    testWordToExplore = testWordToExplore.toLowerCase();
+    wordsToVerify = wordsToVerify.toLowerCase();
+    
+    testWordToExplore = testWordToExplore.split("");
+    wordsToVerify = wordsToVerify.split("");
+    
+    testWordToExplore = testWordToExplore.sort();
+    wordsToVerify = wordsToVerify.sort();
+    
+    testWordToExplore = testWordToExplore.join("");
+    wordsToVerify = wordsToVerify.join("");
+    
+    if(testWordToExplore === wordsToVerify){
+      return wordsToVerify.indexOf;
+
+    }
+  }
+
 
 /*Dado un objeto que contiene 2 arreglos, retornar un objeto con 1
 arreglo que contiene las palabras sin vocales.*/
