@@ -60,14 +60,14 @@ let testSampleList = [
 ];
 
 function wordLengthClassifier(wordsList) {
-    let largo=strings[0];
+    let largo=wordsList[0];
 let la_palabra_mas_larga='';
 
-for (let i = 0; i<strings.length; i++){
+for (let i = 0; i<wordsList.length; i++){
 
 
 
-  if (strings[i].length>largo.length) {
+  if (wordsList[i].length>largo.length) {
     la_palabra_mas_larga=strings[i];
   }
 }
