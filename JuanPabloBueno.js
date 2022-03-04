@@ -119,7 +119,11 @@ let wordArrayA = ["hola", "¿" ,"cómo", "estás", "?"];
 let wordArrayB = ["te", "ves" ,"igual", "te", "ves", "igual"];
 
 function arrayJoiner(listA, listB) {
- // :)
+let array1 = listA
+let array2 = listB
+let array3 = array1.concat(array2);
+
+console.log(array3);
 }
 
 
@@ -168,17 +172,16 @@ console.log(vocalsRemoverFromObject(testObjMultiContainer));
 let someWordsToTest = ["compañeros", "estudiantes", "señores", "amigos", "graduandos", "artistas", "universitarios"];
 
 function lastVocalReplacer(words) {
-    
+    let caracteres = words
+    return caracteres.replace(/[aeiou]/gi, 'x');
 }
-someWordsToTest.splice (someWordsToTest.indexOf("compañeros"), 1, "compañerxs");
-someWordsToTest.splice (someWordsToTest.indexOf("estudiantes"), 1, "estudiantxs");
-someWordsToTest.splice (someWordsToTest.indexOf("señores"), 1, "señorxs");
-someWordsToTest.splice (someWordsToTest.indexOf("amigos"), 1, "amigxs");
-someWordsToTest.splice (someWordsToTest.indexOf("graduandos"), 1, "graduandxs");
-someWordsToTest.splice (someWordsToTest.indexOf("artistas"), 1, "artistxs");
-someWordsToTest.splice (someWordsToTest.indexOf("universitarios"), 1, "universitarixs");
-
-return someWordsToTest;
+console.log(lastVocalReplacer("compañeros"));
+console.log(lastVocalReplacer("estudiantes"));
+console.log(lastVocalReplacer("señores"));
+console.log(lastVocalReplacer("amigos"));
+console.log(lastVocalReplacer("graduandos"));
+console.log(lastVocalReplacer("artistas"));
+console.log(lastVocalReplacer("universitarios"));
 
 
 /*Dada una lista de palabras verificar si alguna de las palabras es la
