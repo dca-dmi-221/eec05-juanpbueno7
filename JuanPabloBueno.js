@@ -35,9 +35,9 @@ let testWordsList = [
 // pruebe para cada palabra A, B y C
 function wordSearcherIgnoreCase(targetWord, wordsList) {
     wordsList.includes(targetWord)
-    ['a', 'b', 'c'].includes('a')
-    ['a', 'b', 'c'].includes('b')
-    ['a', 'b', 'c'].includes('c')
+    let a = ['a', 'b', 'c'].includes('a')
+    let b = ['a', 'b', 'c'].includes('b')
+    let c =['a', 'b', 'c'].includes('c')
     return true
     
 }
@@ -61,8 +61,21 @@ let testSampleList = [
 ];
 
 function wordLengthClassifier(wordsList) {
-    // :)
+    let largo=strings[0];
+let la_palabra_mas_larga='';
+
+for (let i = 0; i<strings.length; i++){
+
+
+
+  if (strings[i].length>largo.length) {
+    la_palabra_mas_larga=strings[i];
+  }
 }
+
+return la_palabra_mas_larga;
+}
+
 
 
 /*Dado un string retorna si este es o no un palíndromo. No debe diferenciar entre mayúsculas y minúsculas*/
@@ -140,8 +153,17 @@ console.log(vocalsRemoverFromObject(testObjMultiContainer));
 let someWordsToTest = ["compañeros", "estudiantes", "señores", "amigos", "graduandos", "artistas", "universitarios"];
 
 function lastVocalReplacer(words) {
-    // :)
+    
 }
+someWordsToTest.splice (someWordsToTest.indexOf("compañeros"), 1, "compañerxs");
+someWordsToTest.splice (someWordsToTest.indexOf("estudiantes"), 1, "estudiantxs");
+someWordsToTest.splice (someWordsToTest.indexOf("señores"), 1, "señorxs");
+someWordsToTest.splice (someWordsToTest.indexOf("amigos"), 1, "amigxs");
+someWordsToTest.splice (someWordsToTest.indexOf("graduandos"), 1, "graduandxs");
+someWordsToTest.splice (someWordsToTest.indexOf("artistas"), 1, "artistxs");
+someWordsToTest.splice (someWordsToTest.indexOf("universitarios"), 1, "universitarixs");
+
+return someWordsToTest;
 
 
 /*Dada una lista de palabras verificar si alguna de las palabras es la
